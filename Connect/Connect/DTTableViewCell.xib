@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="275" id="KGk-i7-Jjw" customClass="DTTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="275"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="274.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8E9-kK-TNG">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="5rq-Wg-4Kg"/>
+                            <constraint firstAttribute="height" constant="50" id="gQ0-EU-T1W"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ca-Kz-cic">
+                        <rect key="frame" x="68" y="40" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5V-Bp-8Nc">
+                        <rect key="frame" x="68" y="8" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="chatfrom_bg_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="b7T-GN-zGz">
+                        <rect key="frame" x="3" y="68" width="93" height="80"/>
+                        <rect key="contentStretch" x="0.5" y="0.69999999999999996" width="0.0" height="0.0"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="nPC-eP-Bgf">
+                        <rect key="frame" x="27" y="68" width="55" height="71"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kSN-XM-RVX">
+                        <rect key="frame" x="8" y="158" width="390" height="100.5"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JCs-eR-QSU">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8ui-Xz-MSm">
+                        <rect key="frame" x="0.0" y="264" width="406" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="geE-EX-Qii"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nPC-eP-Bgf" firstAttribute="trailing" secondItem="b7T-GN-zGz" secondAttribute="trailing" constant="-14" id="2Xh-h5-p9q"/>
+                    <constraint firstItem="8ui-Xz-MSm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3Pc-r3-nts"/>
+                    <constraint firstItem="b7T-GN-zGz" firstAttribute="top" secondItem="8E9-kK-TNG" secondAttribute="bottom" constant="10" id="64c-yH-aSz"/>
+                    <constraint firstItem="4ca-Kz-cic" firstAttribute="leading" secondItem="8E9-kK-TNG" secondAttribute="trailing" constant="10" id="9WP-e0-kD6"/>
+                    <constraint firstItem="8E9-kK-TNG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="LPe-ZL-DmQ"/>
+                    <constraint firstAttribute="bottom" secondItem="8ui-Xz-MSm" secondAttribute="bottom" id="NLF-SM-Oam"/>
+                    <constraint firstItem="8ui-Xz-MSm" firstAttribute="top" secondItem="kSN-XM-RVX" secondAttribute="bottom" constant="5" id="NRJ-1l-19d"/>
+                    <constraint firstItem="d5V-Bp-8Nc" firstAttribute="top" secondItem="8E9-kK-TNG" secondAttribute="top" id="Pf1-X0-se0"/>
+                    <constraint firstItem="kSN-XM-RVX" firstAttribute="leading" secondItem="8E9-kK-TNG" secondAttribute="leading" id="Vqz-Ok-cUg"/>
+                    <constraint firstItem="nPC-eP-Bgf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="27" id="WJ4-fG-pog"/>
+                    <constraint firstAttribute="trailing" secondItem="kSN-XM-RVX" secondAttribute="trailing" constant="8" id="asT-cj-CUv"/>
+                    <constraint firstItem="d5V-Bp-8Nc" firstAttribute="leading" secondItem="8E9-kK-TNG" secondAttribute="trailing" constant="10" id="e1M-Pw-y9d"/>
+                    <constraint firstItem="kSN-XM-RVX" firstAttribute="top" secondItem="b7T-GN-zGz" secondAttribute="bottom" constant="10" id="e4t-Nh-Z16"/>
+                    <constraint firstItem="4ca-Kz-cic" firstAttribute="bottom" secondItem="8E9-kK-TNG" secondAttribute="bottom" id="gVn-FT-Xb5"/>
+                    <constraint firstItem="nPC-eP-Bgf" firstAttribute="leading" secondItem="b7T-GN-zGz" secondAttribute="leading" constant="24" id="j9P-wR-acZ"/>
+                    <constraint firstItem="8E9-kK-TNG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="jFE-eI-7E0"/>
+                    <constraint firstItem="nPC-eP-Bgf" firstAttribute="top" secondItem="b7T-GN-zGz" secondAttribute="top" id="jOz-8X-sei"/>
+                    <constraint firstItem="nPC-eP-Bgf" firstAttribute="bottom" secondItem="b7T-GN-zGz" secondAttribute="bottom" constant="-9" id="nYN-EE-WmJ"/>
+                    <constraint firstAttribute="trailing" secondItem="8ui-Xz-MSm" secondAttribute="trailing" id="nl4-99-zt1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="kSN-XM-RVX" id="iP3-dj-lmo"/>
+                <outlet property="headIcon" destination="8E9-kK-TNG" id="blg-aX-725"/>
+                <outlet property="splitView" destination="8ui-Xz-MSm" id="gBg-Po-6Tv"/>
+                <outlet property="textContent" destination="nPC-eP-Bgf" id="9dn-sc-k2J"/>
+                <outlet property="timestamp" destination="4ca-Kz-cic" id="N9C-tD-BL7"/>
+                <outlet property="username" destination="d5V-Bp-8Nc" id="Y59-Lp-Q4k"/>
+            </connections>
+            <point key="canvasLocation" x="346" y="342.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chatfrom_bg_normal.png" width="93" height="80"/>
+    </resources>
+</document>

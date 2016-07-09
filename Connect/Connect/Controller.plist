@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>className</key>
+		<string>ChatViewController</string>
+		<key>selImage</key>
+		<string>tabbar_mainframeHL@2x</string>
+		<key>norImage</key>
+		<string>tabbar_mainframe@2x</string>
+		<key>title</key>
+		<string>聊天</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>HomeViewController</string>
+		<key>selImage</key>
+		<string>tabbar_contactsHL@2x</string>
+		<key>norImage</key>
+		<string>tabbar_contacts@2x</string>
+		<key>title</key>
+		<string>好友</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>FriendsterViewController</string>
+		<key>selImage</key>
+		<string>tabbar_discoverHL@2x</string>
+		<key>norImage</key>
+		<string>tabbar_discover@2x</string>
+		<key>title</key>
+		<string>朋友圈</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>ZhenViewController</string>
+		<key>selImage</key>
+		<string>tabbar_meHL@2x</string>
+		<key>norImage</key>
+		<string>tabbar_me@2x</string>
+		<key>title</key>
+		<string>朕</string>
+	</dict>
+</array>
+</plist>

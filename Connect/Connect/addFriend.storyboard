@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qj3-8j-jcI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Add Friend View Controller-->
+        <scene sceneID="5Ay-rR-67R">
+            <objects>
+                <viewController id="Qj3-8j-jcI" customClass="addFriendViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T8r-NE-5jX"/>
+                        <viewControllerLayoutGuide type="bottom" id="vmz-uZ-mEp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hm4-2V-Jnh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入好友名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yYQ-61-aTI">
+                                <rect key="frame" x="40" y="90" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ULE-r8-1aH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Qj3-8j-jcI" id="udl-lL-GkS"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="px3-Tf-uq9">
+                                <rect key="frame" x="230" y="138" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RsP-In-4mv"/>
+                                    <constraint firstAttribute="width" constant="50" id="qDF-Nu-VFM"/>
+                                </constraints>
+                                <state key="normal" title="添加"/>
+                                <connections>
+                                    <action selector="addBuddy:" destination="Qj3-8j-jcI" eventType="touchUpInside" id="GnK-hr-vls"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yYQ-61-aTI" firstAttribute="leading" secondItem="Hm4-2V-Jnh" secondAttribute="leading" constant="40" id="C9h-Qs-ZGZ"/>
+                            <constraint firstItem="px3-Tf-uq9" firstAttribute="top" secondItem="yYQ-61-aTI" secondAttribute="bottom" constant="18" id="VDo-Ca-NUV"/>
+                            <constraint firstAttribute="trailing" secondItem="yYQ-61-aTI" secondAttribute="trailing" constant="40" id="bZO-tv-9xf"/>
+                            <constraint firstItem="px3-Tf-uq9" firstAttribute="trailing" secondItem="yYQ-61-aTI" secondAttribute="trailing" id="geU-W5-6pY"/>
+                            <constraint firstItem="yYQ-61-aTI" firstAttribute="top" secondItem="T8r-NE-5jX" secondAttribute="bottom" constant="70" id="psC-oy-Ooe"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="textField" destination="yYQ-61-aTI" id="iyw-Xw-P0B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfE-zC-jXm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="346"/>
+        </scene>
+    </scenes>
+</document>

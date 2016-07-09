@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xQL-PE-Vlg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Content View Controller-->
+        <scene sceneID="ffU-Sl-gqP">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="xQL-PE-Vlg" customClass="ContentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DjJ-P1-cfI"/>
+                        <viewControllerLayoutGuide type="bottom" id="bPl-Oy-1JB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MxP-b4-RNg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XCh-I9-cYG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="110"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="KHI-RU-wf5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2fB-9P-VaN">
+                                <rect key="frame" x="15" y="204" width="345" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="MPd-pK-CuM"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="auV-6g-sk2">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zWa-gj-hUP">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPv-Vj-aTc">
+                                <rect key="frame" x="15" y="145" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="Hxi-u6-tYQ"/>
+                                    <constraint firstAttribute="height" constant="44" id="KZC-6q-7Oy"/>
+                                </constraints>
+                                <state key="normal" image="chatBar_face.png"/>
+                                <connections>
+                                    <action selector="clickFace:" destination="xQL-PE-Vlg" eventType="touchUpInside" id="FXP-ey-8vw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GPv-Vj-aTc" firstAttribute="leading" secondItem="MxP-b4-RNg" secondAttribute="leading" constant="15" id="4EW-vQ-l7e"/>
+                            <constraint firstItem="2fB-9P-VaN" firstAttribute="leading" secondItem="MxP-b4-RNg" secondAttribute="leading" constant="15" id="G85-Ph-apl"/>
+                            <constraint firstItem="2fB-9P-VaN" firstAttribute="top" secondItem="GPv-Vj-aTc" secondAttribute="bottom" constant="15" id="IMR-un-39N"/>
+                            <constraint firstItem="GPv-Vj-aTc" firstAttribute="top" secondItem="XCh-I9-cYG" secondAttribute="bottom" constant="15" id="YUz-QX-Af0"/>
+                            <constraint firstAttribute="trailing" secondItem="XCh-I9-cYG" secondAttribute="trailing" id="f9H-Fn-6x7"/>
+                            <constraint firstItem="XCh-I9-cYG" firstAttribute="leading" secondItem="MxP-b4-RNg" secondAttribute="leading" id="tdd-NU-U6q"/>
+                            <constraint firstAttribute="trailing" secondItem="2fB-9P-VaN" secondAttribute="trailing" constant="15" id="wps-Ao-ciY"/>
+                            <constraint firstItem="XCh-I9-cYG" firstAttribute="top" secondItem="DjJ-P1-cfI" secondAttribute="bottom" id="zck-Q8-2oG"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="collectionHeight" destination="MPd-pK-CuM" id="ek2-le-hXg"/>
+                        <outlet property="collectionView" destination="2fB-9P-VaN" id="aFx-Eo-nKk"/>
+                        <outlet property="face" destination="GPv-Vj-aTc" id="0Xy-Hm-OZn"/>
+                        <outlet property="textHeight" destination="KHI-RU-wf5" id="r8b-a7-qGe"/>
+                        <outlet property="textView" destination="XCh-I9-cYG" id="TVg-lh-Vua"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uda-0p-5T8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="545.5" y="-5.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chatBar_face.png" width="30" height="30"/>
+    </resources>
+</document>
